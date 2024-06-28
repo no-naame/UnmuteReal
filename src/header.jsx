@@ -14,6 +14,7 @@ const Header = ({ user, handleGoogle, signOut }) => {
         </Link>
       </div>
       <nav className="flex-1 justify-end hidden space-x-4 md:flex">
+          <Component/>
         <Link
           className="font-semibold hover:underline decoration-[#9900FE] decoration-2 underline-offset-8"
           to="/"
@@ -26,7 +27,6 @@ const Header = ({ user, handleGoogle, signOut }) => {
         >
           About Us
         </Link>
-          <Component/>
         {user === null ? (
           <Button onClick={handleGoogle}>Login</Button>
         ) : (

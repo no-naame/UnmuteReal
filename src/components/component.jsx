@@ -5,14 +5,14 @@ import { CardTitle, CardDescription, CardHeader, CardContent, Card } from "@/com
 
 export function Component() {
   return (
-    (<div className="fixed top-4 right-4 z-50">
+    (<div className=" top-4 right-4 z-50">
       <Popover>
         <PopoverTrigger asChild>
           <Button className="relative" size="icon" variant="ghost">
             <BellIcon className="h-6 w-6" />
             <span
               className="absolute -top-1 -right-1 flex h-3 w-3 items-center justify-center rounded-full bg-red-500 text-xs text-white">
-              3
+              0
             </span>
           </Button>
         </PopoverTrigger>
@@ -20,29 +20,15 @@ export function Component() {
           <Card className="border-0 shadow-lg">
             <CardHeader className="border-b">
               <CardTitle>Notifications</CardTitle>
-              <CardDescription>You have 3 unread messages.</CardDescription>
+              <CardDescription>You have 0 unread messages.</CardDescription>
             </CardHeader>
             <CardContent className="py-4">
               <div className="space-y-4">
                 <div className="grid grid-cols-[25px_1fr] items-start gap-4">
                   <span className="flex h-2 w-2 translate-y-1 rounded-full bg-blue-500" />
                   <div className="space-y-1">
-                    <p className="text-sm font-medium">Your call has been confirmed.</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">5 min ago</p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-[25px_1fr] items-start gap-4">
-                  <span className="flex h-2 w-2 translate-y-1 rounded-full bg-blue-500" />
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium">You have a new message!</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">1 min ago</p>
-                  </div>
-                </div>
-                <div className="grid grid-cols-[25px_1fr] items-start gap-4">
-                  <span className="flex h-2 w-2 translate-y-1 rounded-full bg-blue-500" />
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium">Your subscription is expiring soon!</p>
-                    <p className="text-sm text-gray-500 dark:text-gray-400">2 hours ago</p>
+                    <p className="text-sm font-medium">Searching for Peoples Nearby</p>
+                    {/*<p className="text-sm text-gray-500 dark:text-gray-400">5 min ago</p>*/}
                   </div>
                 </div>
               </div>
